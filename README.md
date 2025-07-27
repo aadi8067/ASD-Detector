@@ -73,17 +73,16 @@ Key behavioral features impacting diagnosis:
 Less important features: Age and Ethnicity
 
 ---
+---
+## 📁 Project Output -
 
-## 📂 Project Structure
+SS.1: Autism SD Detected
+    ![ASD](<Screenshot (116).png>) 
+    ![ASD](<Screenshot (117).png>)
 
-ASD-Detector/
-│
-├── models/
-│ └── ASD_Model_Training.ipynb # Model training notebook (Colab)
-├── app.py # Web app for ASD prediction
-├── requirements.txt # Dependencies
-├── README.md # Project documentation
-├── app.py ASD Detection Web App #A simple Flask-based web application (app.py) allows users to input symptoms and instantly receive ASD prediction results using the trained model.
+SS.2: Autism SD Not Detected
+    ![No ASD](<Screenshot (118).png>)
+    ![No ASD](<Screenshot (121).png>)
 
 ---
 
@@ -133,16 +132,16 @@ Federated Learning for privacy-preserving training
 
 Mobile App deployment (TensorFlow Lite)
 
----
+
 ---
 
 ### 📄 License
 This project is developed for academic and research purposes only under Vishwakarma Institute of Technology, Pune.
 
----
+
 ---
 ### 📌 Citation
-Dhakane Aditya, et al. "Multi-Algorithmic Approach for Accurate Detection of Autism Spectrum Disorder: A Machine Learning Perspective." Vishwakarma Institute of Technology, Pune.
+Dhakane Aditya - "Multi-Algorithmic Approach for Accurate Detection of Autism Spectrum Disorder: A Machine Learning Perspective." Vishwakarma Institute of Technology, Pune.
 
 ---
 ---
