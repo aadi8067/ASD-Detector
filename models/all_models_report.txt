@@ -1,0 +1,62 @@
+🚀 Autism Detection - Model Performance Report
+
+==================================================
+📌 Model: RandomForest
+🎯 Accuracy: 95.9%
+
+📊 Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.97      0.96      0.97        81
+           1       0.93      0.95      0.94        41
+
+    accuracy                           0.96       122
+   macro avg       0.95      0.96      0.95       122
+weighted avg       0.96      0.96      0.96       122
+
+
+==================================================
+📌 Model: LogisticRegression
+🎯 Accuracy: 100.0%
+
+📊 Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        81
+           1       1.00      1.00      1.00        41
+
+    accuracy                           1.00       122
+   macro avg       1.00      1.00      1.00       122
+weighted avg       1.00      1.00      1.00       122
+
+
+==================================================
+📌 Model: SVM
+🎯 Accuracy: 95.08%
+
+📊 Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.96      0.96      0.96        81
+           1       0.93      0.93      0.93        41
+
+    accuracy                           0.95       122
+   macro avg       0.94      0.94      0.94       122
+weighted avg       0.95      0.95      0.95       122
+
+
+==================================================
+📌 Model: KNN
+🎯 Accuracy: 93.44%
+
+📊 Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.96      0.94      0.95        81
+           1       0.88      0.93      0.90        41
+
+    accuracy                           0.93       122
+   macro avg       0.92      0.93      0.93       122
+weighted avg       0.94      0.93      0.93       122
+
+
