@@ -13,11 +13,12 @@ A multi-algorithmic machine learning approach for accurately detecting Autism Sp
 ## 👥 Authors
 
 - Dr. A. K. Chaudhari  
+- **Aditya A. Dhakane**
 - Shreyas Kulkarni  
 - Asawari Kshirsagar  
 - Vaibhav Mhetre  
 - Shreya Anjikhane  
-- **Aditya Dhakane**
+
 
 ---
 
@@ -29,38 +30,39 @@ This project utilizes a multi-algorithmic machine learning pipeline to detect Au
 
 ## 📊 Dataset
 
-- **Records:** 704 entries
-- **Features:** 21 (10 behavioral + 10 individual characteristics + target class)
-- **Target:** `ASD` (Yes/No)
+- **Records:** 704 entries  
+- **Features:** 21 (10 behavioral + 10 individual characteristics + target class)  
+- **Target:** `ASD` (Yes/No)  
+- 📥 [Dataset Source - Kaggle](https://www.kaggle.com/datasets/fabdelja/autism-screening-for-toddlers)
 
 ---
 
 ## ⚙️ Models Implemented
 
-| Algorithm             | Accuracy | Precision | Recall | F1-Score |
-|----------------------|----------|-----------|--------|----------|
-| Logistic Regression  | 100%     | 1.00      | 1.00   | 1.00     |
-| Support Vector Machine (SVM) | 95.08% | 0.94 | 0.94   | 0.94     |
-| Random Forest        | 94.26%   | 0.93      | 0.94   | 0.94     |
-| K-Nearest Neighbors  | 93.44%   | 0.92      | 0.93   | 0.93     |
+| Algorithm                  | Accuracy | Precision | Recall | F1-Score |
+|---------------------------|----------|-----------|--------|----------|
+| Logistic Regression        | 100%     | 1.00      | 1.00   | 1.00     |
+| Support Vector Machine     | 95.08%   | 0.94      | 0.94   | 0.94     |
+| Random Forest              | 94.26%   | 0.93      | 0.94   | 0.94     |
+| K-Nearest Neighbors (KNN)  | 93.44%   | 0.92      | 0.93   | 0.93     |
 
 ---
 
 ## 🧪 Evaluation Metrics
 
-- Accuracy Score
-- Confusion Matrix
-- Precision, Recall, F1-score
+- Accuracy Score  
+- Confusion Matrix  
+- Precision, Recall, F1-score  
 - Feature Importance (from Random Forest)
 
 ---
 
 ## 🔍 Feature Engineering & Preprocessing
 
-- Label Encoding & One-Hot Encoding
-- Missing value imputation
-- Min-Max Normalization & Z-score Standardization
-- SMOTE for balancing target class
+- Label Encoding & One-Hot Encoding  
+- Missing value imputation  
+- Min-Max Normalization & Z-score Standardization  
+- SMOTE for class imbalance handling  
 
 ---
 
@@ -72,49 +74,77 @@ Less important features: Age and Ethnicity
 
 ---
 
+## 📂 Project Structure
+
+ASD-Detector/
+│
+├── models/
+│ └── ASD_Model_Training.ipynb # Model training notebook (Colab)
+├── app.py # Web app for ASD prediction
+├── requirements.txt # Dependencies
+├── README.md # Project documentation
+├── app.py ASD Detection Web App #A simple Flask-based web application (app.py) allows users to input symptoms and instantly receive ASD prediction results using the trained model.
+
 ---
 
 ## 🧪 Model Training (Colab)
 
-Train and evaluate models using the provided Colab notebook:
+Train and evaluate models using the provided notebook:
 
 📁 `models/ASD_Model_Training.ipynb`  
-🔗 Open via [Google Colab](https://colab.research.google.com/)
+🔗 [Open in Google Colab](https://colab.research.google.com/)
 
-Steps:
-1. Upload or load the dataset  -  https://www.kaggle.com/datasets/fabdelja/autism-screening-for-toddlers
+**Steps**:
+1. Upload or load the dataset  
 2. Run all cells to:
-   - Preprocess data
-   - Train 4 different models
-   - Evaluate performance
-   - Visualize metrics and feature importance
+   - Preprocess data  
+   - Train and evaluate 4 ML models  
+   - Visualize metrics and feature importance  
 
 ---
 
-## 💻 Run Locally using PyCharm
+## 💻 Run Locally using PyCharm or Any IDE
 
-1. Open the project in **PyCharm**
-2. (Recommended) Create a virtual environment
+### 📌 Requirements:
+- Python 3.7+
+- Flask (if using app.py for deployment)
+
+### 🔧 Setup Instructions:
+1. Open the project folder in **PyCharm**
+2. (Optional) Create a virtual environment
 3. Install required packages:
+    pip install -r requirements.txt
 
-pip install -r requirements.txt
-Open and run the training notebook or .py script
+To run the application locally:
+python app.py
 
+Open browser and go to:
+http://127.0.0.1:5000
 
+---
+---
 
-🧠 Future Scope
+### 🧠 Future Scope
 Integrate Deep Learning (CNN, LSTM)
 
-Eye-tracking / MRI-based prediction
+Eye-tracking / MRI-based detection
 
-Federated Learning for privacy-aware ASD detection
+Federated Learning for privacy-preserving training
 
-Mobile App deployment using TensorFlow Lite
+Mobile App deployment (TensorFlow Lite)
 
-📄 License
+---
+---
+
+### 📄 License
 This project is developed for academic and research purposes only under Vishwakarma Institute of Technology, Pune.
 
-📌 Citation
-Dhakane Aditya - "Multi-Algorithmic Approach for Accurate Detection of Autism Spectrum Disorder: A Machine Learning Perspective." Vishwakarma Institute of Technology, Pune.
+---
+---
+### 📌 Citation
+Dhakane Aditya, et al. "Multi-Algorithmic Approach for Accurate Detection of Autism Spectrum Disorder: A Machine Learning Perspective." Vishwakarma Institute of Technology, Pune.
 
-Thanks !!
+---
+---
+### 🙏 Thanks for exploring this project!
+---
